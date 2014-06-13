@@ -1,0 +1,70 @@
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+$myFontColor: darken(white, 5%);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: $myFontColor;
+$headingFont: 'Open Sans', sans-serif;
+$headingColor: $myFontColor;
+$headingLetterSpacing: -0.08em;
+$headingTextShadow: none;
+$backgroundColor: darken(#285E88, 10%);
+$linkColor: $myFontColor;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+// Fix links so they are not cut off
+.reveal a:not(.image) {
+  line-height: 1.3em;
+}
+
+// Background generator
+@mixin bodyBackground() {
+
+}
+
+.design-dev-cycle {
+  img {
+    background: darken(white, 5%);
+    border: 10px solid  darken(white, 5%);
+  }
+}
+
+.yeoman,
+.yo-grunt-bower {
+  img {
+    background: white;
+  }
+}
+
+.yeoman {
+  img {
+    border: 30px solid white;
+  }
+}
+
+.grunt {
+  img {
+    width: 80%;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+#Design-Dev-Cycle {
+  background-color: white;
+}
