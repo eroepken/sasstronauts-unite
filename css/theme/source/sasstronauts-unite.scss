@@ -17,7 +17,10 @@ $mainFont: 'Open Sans', sans-serif;
 $mainColor: $myFontColor;
 $headingFont: 'Open Sans', sans-serif;
 $headingColor: $myFontColor;
-$headingLetterSpacing: -0.08em;
+/* Sorry, I think the letters were too close together and became difficult to
+read. Feel free to change this back if you disagree. */
+// $headingLetterSpacing: -0.08em;
+$headingLetterSpacing: 0;
 $headingTextShadow: none;
 $backgroundColor: darken(#285E88, 10%);
 $linkColor: $myFontColor;
@@ -67,4 +70,14 @@ $selectionBackgroundColor: #134674;
 
 #Design-Dev-Cycle {
   background-color: white;
+}
+
+.halfsies article {
+  display: inline-block;
+  max-width: 50%;
+  vertical-align: top;
+}
+
+p.large {
+  font-size: 3.77em;
 }

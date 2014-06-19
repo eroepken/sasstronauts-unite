@@ -43,13 +43,101 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
+				<section id="start">
 					<img src="images/sass.png" alt="Sass">
 				</section>
 
-				<section data-source="http://sass-lang.com/">
+				<section id="description" data-source="http://sass-lang.com/">
 					<p>"Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."</p>
 				</section>
+
+        <section id="command-line">
+          <h1>Command Line</h1>
+        </section>
+
+        <section id="installation">
+          <h2>Installation</h2>
+          <code>sudo gem install sass</code>
+        </section>
+
+        <section id="compilation">
+          <h2>Compilation</h2>
+          <h3>Simple</h3>
+          <code>sass style.scss</code><br />
+          <br />
+          <h3>Complex</h3>
+          <code>sass --watch style.scss:someotherfile.css<br />--style=[nested|expanded|compact|compressed]</code><br /><br />
+          <code>sass app/scss:public/css</code>
+        </section>
+
+        <section id="conversion">
+          <h2>Conversion</h2>
+          <code>sass-convert style.scss style.sass</code>
+        </section>
+
+        <section id="syntax">
+          <h1>Syntax</h1>
+        </section>
+
+        <section id="nesting" class="inline-elements">
+          <h2>Nesting</h2>
+          <article>
+            <h3>Sass</h3>
+            <picture>
+              <source src="images/sass-nesting.png">
+              <img src="images/sass-nesting.png" alt="An example of nesting in Sass.">
+            </picture>
+          </article>
+          <article>
+            <h3>CSS</h3>
+            <picture>
+              <source src="images/css-nesting.png">
+              <img src="images/css-nesting.png" alt="Sass' nested output.">
+            </picture>
+          </article>
+        </section>
+
+        <section id="nested-properties" class="inline-elements">
+          <h2>Nested Properties</h2>
+          <article>
+            <h3>Sass</h3>
+            <picture>
+              <source src="images/sass-nesting.png">
+              <img src="images/sass-nesting.png" alt="An example of nesting in Sass.">
+            </picture>
+          </article>
+          <article>
+            <h3>CSS</h3>
+            <picture>
+              <source src="images/css-nesting.png">
+              <img src="images/css-nesting.png" alt="Sass' nested output.">
+            </picture>
+          </article>
+        </section>
+
+        <section id="parent-selector" class="inline-elements">
+          <h2>Parent Selector (&amp;)</h2>
+          <article>
+            <h3>Sass</h3>
+            <picture>
+              <source src="images/sass-nesting.png">
+              <img src="images/sass-nesting.png" alt="An example of nesting in Sass.">
+            </picture>
+          </article>
+          <article>
+            <h3>CSS</h3>
+            <picture>
+              <source src="images/css-nesting.png">
+              <img src="images/css-nesting.png" alt="Sass' nested output.">
+            </picture>
+          </article>
+        </section>
+
+        <section id="comments">
+          <h2>Commenting</h2>
+          <p>// Single-line comments</p>
+          <p>/* Multi-line comments */</p>
+        </section>
 
 			</div>
 

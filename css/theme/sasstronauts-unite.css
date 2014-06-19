@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+/* Sorry, I think the letters were too close together and became difficult to
+read. Feel free to change this back if you disagree. */
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
@@ -48,7 +50,7 @@ body {
   color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   line-height: 0.9em;
-  letter-spacing: -0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
   text-shadow: none; }
 
@@ -145,3 +147,10 @@ body {
 
 #Design-Dev-Cycle {
   background-color: white; }
+
+.inline-elements article {
+  display: inline-block;
+  vertical-align: top; }
+
+p.large {
+  font-size: 3.77em; }
