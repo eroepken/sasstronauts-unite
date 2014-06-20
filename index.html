@@ -63,7 +63,7 @@
       <section id="compilation">
         <h2>Compilation</h2>
         <h3>Simple</h3>
-        <code>sass style.scss</code>
+        <code>sass style.scss:someotherfile.css</code><br />
         <br />
         <br />
         <h3>Complex</h3>
@@ -82,6 +82,16 @@
       <section id="syntax">
         <h1>Syntax</h1>
       </section>
+
+      <section id="importing">
+        <h2>Importing</h2>
+        <code>@import 'file', 'another-file';</code><br />
+        <picture>
+          <source src="images/import.png">
+          <img src="images/import.png" alt="Importing a file into an element.">
+        </picture>
+      </section>
+
 
       <section id="nesting" class="inline-elements">
         <h2>Nesting</h2>
@@ -142,6 +152,95 @@
         <p>// Single-line comments</p>
         <p>/* Multi-line comments */</p>
       </section>
+
+       <section id="variables">
+         <h2>Variables</h2>
+         <picture>
+           <source src="images/variables.png">
+           <img src="images/variables.png" alt="An h1 using variables to set the border width and color.">
+         </picture><br />
+       </section>
+
+       <section id="mixins">
+         <h2>Mixins</h2>
+         <picture>
+           <source src="images/mixin.png">
+           <img src="images/mixin.png" alt="A clearfix mixin.">
+         </picture><br />
+         <code>@include clearfix;</code>
+       </section>
+
+       <section id="extend" class="inline-elements">
+         <h2>Extending</h2>
+         <article>
+           <h3>Sass</h3>
+           <picture>
+             <source src="images/sass-extend.png">
+             <img src="images/sass-extend.png" alt="A more specific error message class extending a general error message class.">
+           </picture>
+         </article>
+         <article>
+           <h3>CSS</h3>
+           <picture>
+             <source src="images/css-extend.png">
+             <img src="images/css-extend.png" alt="A more specific error message class extending a general error message class.">
+           </picture>
+         </article>
+       </section>
+
+       <section id="placeholder-selector" class="inline-elements">
+         <h2>Placeholder Selector (%)</h2>
+         <article>
+           <h3>Sass</h3>
+           <picture>
+             <source src="images/sass-placeholder-selector.png">
+             <img src="images/sass-placeholder-selector.png" alt="Placeholder selector being used for a notice style.">
+           </picture>
+         </article>
+         <article>
+           <h3>CSS</h3>
+           <picture>
+             <source src="images/css-placeholder-selector.png">
+             <img src="images/css-placeholder-selector.png" alt="Placeholder selector being used for a notice style.">
+           </picture>
+         </article>
+       </section>
+
+       <section id="at-root" class="inline-elements">
+         <h2>At Root Elements</h2>
+         <article>
+           <h3>Sass</h3>
+           <picture>
+             <source src="images/sass-at-root.png">
+             <img src="images/sass-at-root.png" alt="@at-root being used to copy child selectors to the root level.">
+           </picture>
+         </article>
+         <article>
+           <h3>CSS</h3>
+           <picture>
+             <source src="images/css-at-root.png">
+             <img src="images/css-at-root.png" alt="@at-root being used to copy child selectors to the root level.">
+           </picture>
+         </article>
+       </section>
+
+       <section id="at-root-with-without" class="inline-elements">
+         <h2>At Root Elements (With/Without)</h2>
+         <article>
+           <h3>Sass</h3>
+           <picture>
+             <source src="images/sass-at-root2.png">
+             <img src="images/sass-at-root2.png" alt="@at-root being used to copy child selectors to the root level without @media directives.">
+           </picture>
+         </article>
+         <article>
+           <h3>CSS</h3>
+           <picture>
+             <source src="images/css-at-root2.png">
+             <img src="images/css-at-root2.png" alt="@at-root being used to copy child selectors to the root level without @media directives.">
+           </picture>
+         </article>
+       </section>
 
       <section>
         <section id="sassy-tools">
